@@ -1,0 +1,15 @@
+Earlier we have seen the problem – Find the number of islands. 
+In that problem, the objective was to find the total number of islands 
+in the grid. 
+Finding distinct islands can be considered an extension of that problem.
+ We will use the same approach with some modifications.
+
+Use Depth-First Search
+
+If all the nodes in the grid are connected then after DFS all the nodes
+ will be visited and there will be only one Island in the grid. If 
+ there are more islands in the grid we need to multiple DFS to visit 
+ them all. So Number of Islands will be equal to the number of DFS 
+ required to visit all isLands (1’s)
+
+How to determine if two islands are identical: If coordinates in two islands form an identical shape or structure. The coordinates of both the islands can be at a different location. See the example below 
