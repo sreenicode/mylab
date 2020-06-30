@@ -1,3 +1,10 @@
 ---
 applications:
  - name: concepts
+   path: ./build/libs/concepts.jar
+   memory: 500MB
+   instances: 1
+   buildpacks:
+    - java_buildpack
+   env:
+     hello: sreeni
