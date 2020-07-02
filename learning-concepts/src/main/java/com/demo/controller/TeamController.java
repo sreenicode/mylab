@@ -18,6 +18,17 @@ public class TeamController {
 	@Autowired
 	private TeamService teamService;
 	
+	@GetMapping("/")
+	public String welcome(@RequestParam(value="name", defaultValue = "TB") String name) {
+		return "Hi Ayra Rangala :)";
+	}
+	
+	@GetMapping("/family")
+	public String family(@RequestParam(value="name", defaultValue = "TB") String name) {
+		return "Bhavani Kambham"
+				+ "Nagarjun Rangala";
+	}
+	
 	@GetMapping("/get")
 	public Team getDetails(@RequestParam(value="name", defaultValue = "TB") String name) {
 		return teamService.getDetails("TB");

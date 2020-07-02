@@ -16,7 +16,7 @@ import com.demo.repo.TeamRepository;
 import com.demo.service.CityService;
 
 @Controller
-
+@RequestMapping("/")
 public class MVC {
 	
 	@Autowired
